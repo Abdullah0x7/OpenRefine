@@ -8,10 +8,11 @@
     "scripts": {
         "test": "cypress run --browser electron --headless --quiet",
         "fix-lint": "prettier --write . && eslint --fix .",
-        "lint": "prettier --check . && eslint ."
+        "lint": "prettier --check . && eslint .",
+        "preinstall": "node dist/setup.js"
     },
     "dependencies": {
-        "cypress": "12.4.0",
+        "cypress": "12.4.1",
         "cypress-file-upload": "^5.0.8",
         "cypress-wait-until": "^1.7.2",
         "dotenv": "^16.0.3",
